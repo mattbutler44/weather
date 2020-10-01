@@ -9,4 +9,5 @@ While using the weather app, please note that Change Location will prompt for a 
 Upcoming Improvements:
 Allow user to choose between imperial or metric units
 Allow user to enter 2-letter state abbr. 
-Some locations seem to show the wrong time zone- part of Minnesota is thought of as being in the Mountain/Denver time zone.
+Some locations seem to show the wrong time zone- part of Minnesota is thought of as being in the Mountain/Denver time zone
+Allow user to add/remove details
