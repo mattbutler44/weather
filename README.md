@@ -6,7 +6,7 @@ After you have an API key, open weather.js and navigate to line 3. Change the va
 
 While using the weather app, please note that Change Location will prompt for a city and state-- currently you must enter the full state name, i.e. Florida rather than FL.
 
-####Upcoming Improvements:
+#### Upcoming Improvements:
 Allow user to choose between imperial or metric units<br/>
 Allow user to enter 2-letter state abbr. <br/>
 Some locations seem to show the wrong time zone- part of Minnesota is thought of as being in the Mountain/Denver time zone<br/>
