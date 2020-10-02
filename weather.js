@@ -5,7 +5,7 @@ class Weather{
     this.state = state;
   }
   // Fetch weather from API
-  async getBasicWeather(city, state){
+  async getWeather(city, state){
     const responseBasic = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${state}&units=imperial&appid=${this.apiKey}`);
     const responseDataBasic = await responseBasic.json();
 
@@ -20,15 +20,6 @@ class Weather{
       responseDataBasic,
       responseDataExtended
     };
-  }
-
-  async getExtendedWeather(lat, lon){
-    const response = 
-    await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly,daily&appid=${this.apiKey}`);
-
-    const responseData2 = await response.json();
-    console.log('extended' + response.responseData2);
-    return responseData2;
   }
 
   // Change weather location

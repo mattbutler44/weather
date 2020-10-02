@@ -29,8 +29,9 @@ document.getElementById('w-change-btn').addEventListener('click', (event) => {
 });
 
 function getWeather(){
+  // without the following line, UI would not display new location without manually refreshing page
   this.weatherLocation = storage.getLocationData();
-  weather.getBasicWeather(this.weatherLocation.city, this.weatherLocation.state)
+  weather.getWeather(this.weatherLocation.city, this.weatherLocation.state)
     .then(results => {
       ui.paint(results);
       console.log(results);
